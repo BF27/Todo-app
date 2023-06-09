@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #30a2ff;
+}
+.main-header img {
+  height: 2rem;
+  width: 2rem;
+}
+.main-header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+#root > main .todo-container {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.45s ease;
+}
+#root > main .todo-container:hover {
+  box-shadow: 1px 1px 5px rgb(84, 82, 82);
+}
+#root > main .todo-container .del-todo {
+  color: rgb(181, 10, 33);
+}
+#root > main label {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  height: 100%;
+}
+#root > main label input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}
+#root > main .add-todo-btn {
+  background-color: #30a2ff;
+  color: #ffffff;
+  border: none;
+  transition: all 0.45s ease;
+}
+#root > main .add-todo-btn:hover {
+  border: none;
+  transform: scale(1.05);
+}/*# sourceMappingURL=styles.css.map */

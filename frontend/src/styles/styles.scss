@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+//Variables
+$fontFamily: "Roboto", sans-serif;
+$main-color: #30a2ff;
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+:root {
+  font-family: $fontFamily;
+  font-weight: 400;
+}
+
+.main-header {
+  width: 100%;
+
+  background-color: $main-color;
+
+  img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  h1 {
+    font-family: $fontFamily;
+    font-weight: 700;
+
+    margin: 0;
+  }
+}
+
+#root > main {
+  .todo-container {
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.25rem;
+
+    transition: all 0.45s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 5px rgb(84, 82, 82);
+    }
+
+    .del-todo {
+      color: rgb(181, 10, 33);
+    }
+  }
+
+  label {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    text-transform: capitalize;
+    font-family: $fontFamily;
+    font-weight: 700;
+    height: 100%;
+
+    input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+    }
+  }
+  .add-todo-btn {
+    background-color: $main-color;
+    color: #ffffff;
+    border:none;
+    transition: all .45s ease;
+    &:hover {
+      border:none;
+      transform: scale(1.05);
+      
+    }
+  }
+}
