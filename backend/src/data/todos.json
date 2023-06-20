@@ -1,5 +1,1 @@
-[
-  { "id": 2, "title": "Megetetni a kutyát", "isDone": false },
-  { "id": 3, "title": "Megetetni a macskát", "isDone": true },
-  { "id": 4, "title": "Kecskesajtot venni", "isDone": false }
-]
+[{"id":2,"title":"Megetetni a kutyát","isDone":true},{"id":4,"title":"Kecskesajtot venni","isDone":true},{"id":5,"title":"megsimogatni a kutyát","isDone":false}]

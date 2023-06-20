@@ -3,7 +3,7 @@ import { createEl } from "../../utils/createEl.js";
 
 export function createAddTodoField() {
   const todoEl = createEl("div", {
-    className: "todo-container ",
+    className: "todo-container d-flex align-items-center justify-content-between gap-3 ",
     id: "add-todo-row",
   });
   /* const formEl = createEl("form", {
